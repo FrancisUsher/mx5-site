@@ -2,12 +2,27 @@
 
 ---
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<div class="nav-links">
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
+  <a href="/blog/">Blog</a>
+</div>
 
 <style>
+  .nav-links {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    display: none;
+    margin: 0;
+  }
   a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
     color: light-dark(
       var(--color-on-primary-lightmode),
       var(--color-on-primary-darkmode)
@@ -20,7 +35,25 @@
       var(--color-on-primary-darkmode)
     );
   }
-  a:hover {
+  a:hover,
+  a:focus {
     text-decoration: underline;
+  }
+  .expanded {
+    display: unset;
+  }
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 5em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
   }
 </style>
