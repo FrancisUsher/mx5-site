@@ -1,5 +1,32 @@
+:root {
+  color-scheme: light dark;
+  --color-primary-lightmode: #6200ee;
+  --color-primary-darkmode: #bb86fc;
+  --color-primary-variant-lightmode: #3700b3;
+  --color-primary-variant-darkmode: #3700b3;
+  --color-secondary-lightmode: #03dac6;
+  --color-secondary-darkmode: #03dac6;
+  --color-secondary-variant-lightmode: #018786;
+  --color-secondary-variant-darkmode: #03dac6;
+  --color-background-lightmode: #fff;
+  --color-background-darkmode: #121212;
+  --color-surface-lightmode: #fff;
+  --color-surface-darkmode: #121212;
+  --color-error-lightmode: #b00020;
+  --color-error-darkmode: #cf6679;
+  --color-on-primary-lightmode: #fff;
+  --color-on-primary-darkmode: #000;
+  --color-on-secondary-lightmode: #000;
+  --color-on-secondary-darkmode: #000;
+  --color-on-background-lightmode: #000;
+  --color-on-background-darkmode: #fff;
+  --color-on-surface-lightmode: #000;
+  --color-on-surface-darkmode: #fff;
+  --color-on-error-lightmode: #fff;
+  --color-on-error-darkmode: #000;
+}
+
 html {
-  background-color: #f1f5f9;
   font-family: sans-serif;
 }
 
@@ -18,4 +45,21 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  color: light-dark(
+    var(--color-on-background-lightmode),
+    var(--color-on-background-darkmode)
+  );
+}
+
+a {
+  color: light-dark(
+    var(--color-secondary-lightmode),
+    var(--color-secondary-darkmode)
+  );
+}
+a:visited {
+  color: light-dark(
+    var(--color-secondary-variant-lightmode),
+    var(--color-secondary-variant-lightmode)
+  );
 }

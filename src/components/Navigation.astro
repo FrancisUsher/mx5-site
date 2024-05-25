@@ -5,3 +5,22 @@
 <a href="/">Home</a>
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
+
+<style>
+  a {
+    color: light-dark(
+      var(--color-on-primary-lightmode),
+      var(--color-on-primary-darkmode)
+    );
+    text-decoration: none;
+  }
+  a:visited {
+    color: light-dark(
+      var(--color-on-primary-lightmode),
+      var(--color-on-primary-darkmode)
+    );
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

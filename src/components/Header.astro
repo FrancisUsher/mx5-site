@@ -7,3 +7,16 @@ import Navigation from "./Navigation.astro";
     <Navigation />
   </nav>
 </header>
+
+<style>
+  header {
+    background-color: light-dark(
+      var(--color-primary-lightmode),
+      var(--color-primary-darkmode)
+    );
+    color: light-dark(
+      var(--color-on-primary-lightmode),
+      var(--color-on-primary-darkmode)
+    );
+  }
+</style>
