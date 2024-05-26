@@ -1,48 +1,29 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About this site";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-    <style>
-      h1 {
-        font-size: 4rem;
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <h2>... and me and my MX-5</h2>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>... and me and my MX-5</h2>
 
-    <p>
-      I purchased a 2021 MX-5 in 2024 because I needed a second car. Like many
-      people I love the car but the infotainment system left me wanting. Thus
-      began my journey to understand and personalize this possession, to make
-      the car an extension of myself by modding it to my preferences.
-    </p>
+  <p>
+    I purchased a 2021 MX-5 in 2024 because I needed a second car. Like many
+    people I love the car but the infotainment system left me wanting. Thus
+    began my journey to understand and personalize this possession, to make the
+    car an extension of myself by modding it to my preferences.
+  </p>
 
-    <p>
-      This site simply documents what I have learned about my car. Nothing
-      should be construed as instructions or an official manual on how the car
-      works. It is better read as opinion than fact.
-    </p>
-    <p>
-      In that vein, take anything you read here with a grain of salt. In the
-      spirit of hacking, do not just copy blindly - do your own due dilligence
-      to understand what you're getting into before taking action. Remember that
-      you are tinkering with a toy that costs tens of thousands of dollars to
-      replace. Hacking your car can potentially break it, and you may lose your
-      toy permanently.
-    </p>
-  </body>
-  <Footer />
-</html>
+  <p>
+    This site simply documents what I have learned about my car. Nothing should
+    be construed as instructions or an official manual on how the car works. It
+    is better read as opinion than fact.
+  </p>
+  <p>
+    In that vein, take anything you read here with a grain of salt. In the
+    spirit of hacking, do not just copy blindly - do your own due dilligence to
+    understand what you're getting into before taking action. Remember that you
+    are tinkering with a toy that costs tens of thousands of dollars to replace.
+    Hacking your car can potentially break it, and you may lose your toy
+    permanently.
+  </p>
+</BaseLayout>
