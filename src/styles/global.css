@@ -30,7 +30,7 @@ html {
   font-family: sans-serif;
 }
 
-body {
+main {
   margin: 0 auto;
   width: 100%;
   max-width: 80ch;
@@ -62,4 +62,8 @@ a:visited {
     var(--color-secondary-variant-lightmode),
     var(--color-secondary-variant-lightmode)
   );
+}
+
+body {
+  margin: 0;
 }

@@ -1,24 +1,75 @@
 ---
+import Image from "astro/components/Image.astro";
+import logo from "../images/logo-small.png";
 import Hamburger from "./Hamburger.astro";
-import Navigation from "./Navigation.astro";
 ---
 
 <header>
+  <a href="/"><Image class="logo" src={logo} alt="Logo" width="40" /></a>
+
   <nav>
-    <Hamburger />
-    <Navigation />
+    <!-- <Hamburger /> -->
+    <ul class="nav-links">
+      <a href="/"><li>Home</li></a>
+      <a href="/about/"><li>About</li></a>
+      <a href="/blog/"><li>Blog</li></a>
+      <a href="/tags/"><li>Tags</li></a>
+    </ul>
   </nav>
 </header>
 
 <style>
   header {
-    background-color: light-dark(
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: light-dark(
       var(--color-primary-lightmode),
       var(--color-primary-darkmode)
     );
     color: light-dark(
       var(--color-on-primary-lightmode),
       var(--color-on-primary-darkmode)
+    ); */
+    background: light-dark(
+      var(--color-primary-lightmode),
+      var(--color-primary-darkmode)
     );
+    padding: 0 2ch;
+  }
+  .logo {
+    margin: 0.5rem;
+    filter: invert(1);
+    @media (prefers-color-scheme: dark) {
+      filter: invert(0);
+    }
+  }
+  ul {
+    display: flex;
+    /* gap: 1rem; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media (max-width: 768px) {
+      position: fixed;
+      inset: 0 0 0 30%;
+      flex-direction: column;
+      padding: min(30vh, 10rem) 2rem;
+    }
+  }
+  li {
+    padding: 1ch 2ch;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+    color: light-dark(
+      var(--color-on-primary-lightmode),
+      var(--color-on-primary-darkmode)
+    );
+  }
+  a:hover,
+  a:focus {
+    text-decoration: underline;
   }
 </style>
