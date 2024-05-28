@@ -4,12 +4,20 @@ import logo from "../images/logo-small.png";
 ---
 
 <header>
-  <a href="/"><Image class="logo" src={logo} alt="Logo" width="40" /></a>
+  <a href="/"
+    ><Image
+      class="logo"
+      src={logo}
+      alt="Logo"
+      width="40"
+      densities={[1.5, 2]}
+    /></a
+  >
 
   <nav>
     <!-- <Hamburger /> -->
     <ul class="nav-links">
-      <a href="/"><li>Home</li></a>
+      <a class="duplicate" href="/"><li>Home</li></a>
       <a href="/about/"><li>About</li></a>
       <a href="/blog/"><li>Blog</li></a>
       <a href="/tags/"><li>Tags</li></a>
@@ -22,14 +30,6 @@ import logo from "../images/logo-small.png";
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: light-dark(
-      var(--color-primary-lightmode),
-      var(--color-primary-darkmode)
-    );
-    color: light-dark(
-      var(--color-on-primary-lightmode),
-      var(--color-on-primary-darkmode)
-    ); */
     background: light-dark(
       var(--color-primary-lightmode),
       var(--color-primary-darkmode)
@@ -45,16 +45,9 @@ import logo from "../images/logo-small.png";
   }
   ul {
     display: flex;
-    /* gap: 1rem; */
     list-style: none;
     padding: 0;
     margin: 0;
-    @media (max-width: 768px) {
-      position: fixed;
-      inset: 0 0 0 30%;
-      flex-direction: column;
-      padding: min(30vh, 10rem) 2rem;
-    }
   }
   li {
     padding: 1ch 2ch;
@@ -70,5 +63,14 @@ import logo from "../images/logo-small.png";
   a:hover,
   a:focus {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .duplicate {
+      display: none;
+    }
+    li {
+      padding: 1ch 1.5ch;
+    }
   }
 </style>
