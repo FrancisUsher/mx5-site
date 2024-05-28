@@ -3,12 +3,33 @@
 ---
 
 <footer>
-  <p>
+  <em>
     Learn more about my projects on
-    <a href="https://github.com/FrancisUsher/"> GitHub </a>!
-  </p>
-  <p>
-    The source code for this site can be found
-    <a href="https://github.com/FrancisUsher/mx5-site">here</a>!
-  </p>
+    <a href="https://github.com/FrancisUsher/"> GitHub</a>. This site uses Astro
+    - the complete source code can be found
+    <a href="https://github.com/FrancisUsher/mx5-site">here</a>.
+  </em>
 </footer>
+
+<style>
+  footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    background-color: light-dark(
+      var(--color-primary-lightmode),
+      var(--color-primary-darkmode)
+    );
+    color: light-dark(
+      var(--color-on-primary-lightmode),
+      var(--color-on-primary-darkmode)
+    );
+  }
+  a {
+    color: light-dark(
+      var(--color-on-primary-lightmode),
+      var(--color-on-primary-darkmode)
+    );
+  }
+</style>
