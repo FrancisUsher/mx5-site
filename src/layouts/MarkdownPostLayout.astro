@@ -15,9 +15,12 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>Published {frontmatter.pubDate.toString().slice(0, 10)}</p>
+  <p>
+    Published {frontmatter.pubDate.toISOString().slice(0, 10)} by <a
+      href="https://github.com/FrancisUsher">Francis Usher</a
+    >
+  </p>
   <p><em>{frontmatter.description}</em></p>
-  <p>Written by {frontmatter.author}</p>
-  <p>Tags: <TagChips tags={frontmatter.tags} /></p>
+  <p><TagChips tags={frontmatter.tags} /></p>
   <slot />
 </BaseLayout>

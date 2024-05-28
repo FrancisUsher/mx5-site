@@ -6,6 +6,7 @@ const { tags } = Astro.props;
 ---
 
 <div>
+  Tags:
   {
     tags.map((tag) => (
       <a href={`/tags/${tag}`}>
@@ -29,16 +30,20 @@ const { tags } = Astro.props;
 
   div {
     display: flex;
+    gap: 0.5em;
+    align-items: center;
     flex-wrap: wrap;
   }
 
   p {
+    height: 28px;
     margin: 0.25em;
     border: dotted 1px
       light-dark(var(--color-primary-lightmode), var(--color-primary-darkmode));
     border-radius: 0.5em;
-    padding: 0.5em 1em;
-    font-size: 1.15em;
+    padding-inline: 1em;
+    align-content: center;
+    font-size: 0.85em;
     background-color: light-dark(
       var(--color-surface-lightmode),
       var(--color-surface-darkmode)
