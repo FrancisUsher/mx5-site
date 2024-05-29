@@ -7,7 +7,6 @@ interface Props {
   frontmatter: Frontmatter;
 }
 const { frontmatter } = Astro.props;
-console.log(frontmatter);
 const published = new Date(frontmatter.pubDate).toISOString().slice(0, 10);
 const lastModified = new Date(frontmatter.lastModified)
   .toISOString()
