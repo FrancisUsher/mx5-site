@@ -16,8 +16,10 @@ const lastModified = new Date(frontmatter.lastModified)
 
 <BaseLayout pageTitle={frontmatter.title}>
   <p>
-    Published {published} by <a href="https://github.com/FrancisUsher"
-      >Francis Usher</a
+    Published {published} by <a
+      href="https://github.com/FrancisUsher"
+      target="_blank"
+      rel="noreferrer noopener">Francis Usher</a
     >{lastModified !== published ? ` (last updated ${lastModified})` : ""}
   </p>
   <p><em>{frontmatter.description}</em></p>
