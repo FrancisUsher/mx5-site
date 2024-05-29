@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import { remarkModifiedTime } from "./remark-modified-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,5 +10,8 @@ export default defineConfig({
   },
   experimental: {
     clientPrerender: true,
+  },
+  markdown: {
+    remarkPlugins: [remarkModifiedTime],
   },
 });

@@ -1,24 +1,24 @@
 ---
 import TagChips from "../components/TagChips.astro";
+import type { Frontmatter } from "../content/config";
 import "../styles/global.css";
 import BaseLayout from "./BaseLayout.astro";
 interface Props {
-  frontmatter: {
-    title: string;
-    pubDate: Date;
-    description: string;
-    author: string;
-    tags: string[];
-  };
+  frontmatter: Frontmatter;
 }
 const { frontmatter } = Astro.props;
+console.log(frontmatter);
+const published = new Date(frontmatter.pubDate).toISOString().slice(0, 10);
+const lastModified = new Date(frontmatter.lastModified)
+  .toISOString()
+  .slice(0, 10);
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
   <p>
-    Published {frontmatter.pubDate.toISOString().slice(0, 10)} by <a
-      href="https://github.com/FrancisUsher">Francis Usher</a
-    >
+    Published {published} by <a href="https://github.com/FrancisUsher"
+      >Francis Usher</a
+    >{lastModified !== published ? ` (last updated ${lastModified})` : ""}
   </p>
   <p><em>{frontmatter.description}</em></p>
   <p><TagChips tags={frontmatter.tags} /></p>
