@@ -1,20 +1,37 @@
 ---
-title: "Off-the-shelf Miata upgrades"
+title: "Basic off-the-shelf Miata upgrades"
 pubDate: 2024-05-28
-description: "Pay for premade components to make the car better."
+description: "A few low-effort quality of life upgrades you can just buy."
 tags: ["modding", "off-the-shelf"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I'm not really in the business of product reviews but I figured to kick off this blog with some easy content I could detail a few of the off-the-shelf upgrades I bought soon after getting a Miata.
+To be clear I am not sponsored or affiliated and don't necessarily recommend any supplier, I've just included links to purchase them for the readers' reference.
 
-## What I've accomplished
+The upgrades I selected aren't very expensive, aren't hard to apply, and can be reversed easily once applied.
 
-1. **Sed ut perspiciatis**: Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+### Front license plate mount - $100
 
-2. **Neque porro quisquam est**: Qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+The stock Miata doesn't come with a front license plate included.
+In fact there's no obvious way to mount a license plate without drilling holes in your front bumper.
+No shot I'm doing that to my pristine new car!
 
-3. **Quis autem vel**: Eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur!
+Some jurisdictions require a front license plate by law though.
+Even if your local police are typically lenient on this law, it's more likely that your zippy little sports car will attract a citation than some random Tesla.
+Personally I'd rather not give them another reason to pull me over for going barely above the speed limit.
 
-## What's next
+Fortunately you don't actually have to drill your front bumper to install [the Platypus License Plate Mount by Cravenspeed](https://mossmiata.com/903-277-platypus-license-plate-mount-by-cravenspeed).
+The Platypus mounts to the front tow hook, which is located near the corner of the grill on the driver's side.
+Although it does introduce a bit of asymmetry to the front-end, I don't think it looks particularly bad.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+In terms of installation, it was super easy.
+The only difficulty was that I had lost one of the sockets necessary for installation, so I had to pick one up from the hardware store.
+It took probably less than 10 minutes and looks way cleaner than I expected.
+
+### Center console organizer tray - $15
+
+The ND1 center console "glove box" was famously insignificant, due to a CD player unit being mounted underneath.
+With the removal of the CD player in the ND2, the glove box was upgraded to fill that extra space, making it much more cavernous.
+Perhaps too cavernous, as it became a chore to dig around in the space looking for your knickknacks.
+
+This introduced another problem though - Autorder Center Console Organizer
